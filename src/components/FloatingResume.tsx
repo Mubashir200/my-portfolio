@@ -17,13 +17,13 @@ export default function FloatingResume() {
         rel="noopener noreferrer"
         whileHover={{ scale: 1.05, x: -5 }}
         whileTap={{ scale: 0.95 }}
-        className="group relative flex items-center gap-4 p-2 pl-6 bg-black/40 backdrop-blur-xl border border-white/10 rounded-full hover:border-accent/50 transition-all duration-300 shadow-2xl"
+        className="group relative flex items-center bg-black/40 backdrop-blur-xl border border-white/10 rounded-full hover:border-accent/50 transition-all duration-300 shadow-2xl p-2"
       >
-        <span className="text-[10px] font-mono text-white/50 uppercase tracking-[0.2em] group-hover:text-accent transition-colors">
+        <span className="hidden md:block text-[10px] font-mono text-white/50 uppercase tracking-[0.2em] group-hover:text-accent transition-colors ml-4 mr-2">
           Download_CV
         </span>
-        <div className="p-3 bg-accent/20 rounded-full border border-accent/30 group-hover:bg-accent group-hover:text-black transition-all duration-500 shadow-[0_0_20px_rgba(0,255,65,0.2)]">
-          <FileText size={18} />
+        <div className="p-3 bg-accent/20 rounded-full border border-accent/30 group-hover:bg-accent group-hover:text-black transition-all duration-500 shadow-[0_0_20px_rgba(0,255,65,0.2)] flex items-center justify-center">
+          <FileText size={20} />
         </div>
         
         {/* Glow Effect */}

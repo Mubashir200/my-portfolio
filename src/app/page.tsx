@@ -1,3 +1,5 @@
+"use client";
+
 import LoadingScreen from "@/components/LoadingScreen";
 import Navbar from "@/components/Navbar";
 import ScrollyCanvas from "@/components/ScrollyCanvas";
@@ -11,7 +13,14 @@ import LiveTerminal from "@/components/LiveTerminal";
 import TerminalPlayground from "@/components/TerminalPlayground";
 import Contact from "@/components/Contact";
 
+import { useEffect } from "react";
+
 export default function Home() {
+  useEffect(() => {
+    // Force scroll to top on fresh load
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <main className="bg-[#0a0a0a] min-h-screen selection:bg-accent/20 selection:text-white overflow-clip">
       <LoadingScreen />

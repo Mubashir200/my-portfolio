@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
@@ -16,7 +16,7 @@ export default function Navbar() {
     { name: "./contact", href: "#contact" },
   ];
 
-  const pillVariants = {
+  const pillVariants: Variants = {
     initial: { y: -20, opacity: 0 },
     animate: { y: 0, opacity: 1 },
     hover: { 
@@ -57,7 +57,6 @@ export default function Navbar() {
               {link.name}
             </motion.a>
           ))}
-          {/* Resume Button moved to floating */}
         </div>
 
         {/* Mobile Toggle Capsule */}
@@ -73,12 +72,12 @@ export default function Navbar() {
         </motion.button>
       </div>
 
-      {/* Mobile Menu (Floating Capsules Stack) */}
+      {/* Mobile Menu */}
       {isOpen && (
         <motion.div 
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          className="lg:hidden absolute top-20 right-6 flex flex-col gap-2 items-end pointer-events-auto"
+          className="lg:hidden absolute top-24 right-6 flex flex-col gap-2 items-end pointer-events-auto"
         >
           {navLinks.map((link, idx) => (
             <motion.a

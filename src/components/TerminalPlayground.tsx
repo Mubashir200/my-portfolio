@@ -86,7 +86,6 @@ export default function TerminalPlayground() {
               <ChevronRight size={14} className="text-accent" />
               <span className="text-accent-secondary">~/mubashir_ {">"}</span>
               <input
-                autoFocus
                 type="text"
                 value={input}
                 onChange={(e) => setInput(e.target.value)}

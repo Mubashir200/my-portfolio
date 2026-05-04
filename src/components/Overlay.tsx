@@ -15,6 +15,10 @@ export default function Overlay({ scrollYProgress }: { scrollYProgress: MotionVa
   const opacity3 = useTransform(scrollYProgress, [0.65, 0.75, 0.85, 0.95], [0, 1, 1, 0]);
   const y3 = useTransform(scrollYProgress, [0.65, 0.95], [30, -30]);
 
+  // Opening Scroll Indicator (Frame 0 - 10)
+  const scrollIndicatorOpacity = useTransform(scrollYProgress, [0, 0.08], [1, 0]);
+  const scrollIndicatorY = useTransform(scrollYProgress, [0, 0.08], [0, 20]);
+
   return (
     <div className="absolute inset-0 pointer-events-none z-10 font-mono">
       <BackgroundElements />
@@ -139,6 +143,20 @@ export default function Overlay({ scrollYProgress }: { scrollYProgress: MotionVa
               <span className="text-[10px] text-accent font-bold uppercase tracking-[0.2em]">Live_Environment</span>
             </div>
           </div>
+        </div>
+      </motion.div>
+      {/* Opening Scroll Indicator */}
+      <motion.div
+        style={{ opacity: scrollIndicatorOpacity, y: scrollIndicatorY }}
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3"
+      >
+        <span className="text-[10px] uppercase tracking-[0.4em] text-white/40">Scroll to Explore</span>
+        <div className="w-[20px] h-[32px] border-2 border-white/20 rounded-full flex justify-center p-1">
+          <motion.div 
+            animate={{ y: [0, 12, 0] }}
+            transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
+            className="w-1 h-1 bg-accent rounded-full shadow-[0_0_10px_#00ff41]" 
+          />
         </div>
       </motion.div>
     </div>
