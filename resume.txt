@@ -1,0 +1,45 @@
+Mohammed Mubashir
+
+Contact Information Maharashtra, India 9823786144
+mubashir.sys@gmail.com
+
+Career Objective
+Aspiring software developer seeking part-time or project-based opportunities to apply and enhance my coding skills. Eager to work on real-world development tasks and contribute to impactful tech projects, while continuously learning and growing in the field of programming.
+ 
+Education
+Diploma in Computer Engineering
+P.E.S College, Aurangabad 2022 - 2025 (76.69%)
+
+SSC (10th Standard)
+Little Flower High School, Aurangabad 2022 (Maharashtra State Board)
+
+Enrolled in Bachelor of Technology program (Btech)
+ 
+Technical Skills
+Programming: HTML, CSS, JavaScript, PHP, Python, Java, C, C++, C#, SQL Tools: Microsoft Word, PowerPoint, Excel, Office Suite, CorelDRAW 
+
+Projects :-
+
+College Management System with AI Chatbot
+-	Front-end: Windows Forms in C#
+-	Back-end: C#, API integration
+-	Database: SQL Server
+-	Features: Chatbot integration, role-based dashboards, real-time updates Purpose: Automates attendance, fees, communication 
+and admin tasks.
+
+Football Leaders Academy Website
+Developed a complete football academy management website using PHP, MySQL, HTML, CSS, and JavaScript.
+Created responsive pages for player profiles, events, matches, training plans, and academy information.
+Built an admin panel to manage players, announcements, registrations, and website content.
+Integrated database connectivity and dynamic content handling using PHP and MySQL.
+Designed a modern and mobile-friendly user interface focused on user experience.
+Hosted and tested the website using local server environments and online hosting platforms.
+
+Certifications
+MSCIT (80/100)
+C & C++ Programming (Certified) Java (Certified)
+Cyber security Workshop
+Web Designing Workshop
+
+Languages Known
+English (Fluent), Hindi (Fluent)
