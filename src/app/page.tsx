@@ -6,6 +6,7 @@ import EngineeringJourney from "@/components/EngineeringJourney";
 import Services from "@/components/Services";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
+import FloatingResume from "@/components/FloatingResume";
 import LiveTerminal from "@/components/LiveTerminal";
 import TerminalPlayground from "@/components/TerminalPlayground";
 import Contact from "@/components/Contact";
@@ -37,6 +38,7 @@ export default function Home() {
       <footer className="bg-[#0a0a0a] border-t border-white/5 py-12 text-center text-white/30 font-mono text-xs uppercase tracking-[0.2em]">
         <p>© {new Date().getFullYear()} Mohammed Mubashir // system_status: online</p>
       </footer>
+      <FloatingResume />
     </main>
   );
 }

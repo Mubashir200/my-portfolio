@@ -57,6 +57,7 @@ export default function Navbar() {
               {link.name}
             </motion.a>
           ))}
+          {/* Resume Button moved to floating */}
         </div>
 
         {/* Mobile Toggle Capsule */}
